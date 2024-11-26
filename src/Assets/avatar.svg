@@ -32,8 +32,8 @@
                     <mask id="mask-6" fill="white">
                         <use xlink:href="#path-5"></use>
                     </mask>
-                    <use fill="#D0C6AC" xlink:href="#path-5"></use>
-                    <g id="Skin/👶🏻-05-Pale" mask="url(#mask-6)" fill="#FFDBB4">
+                    <use fill="#bb9789" xlink:href="#path-5"></use>
+                    <g id="Skin/👶🏻-05-Pale" mask="url(#mask-6)" fill="#">
                         <g transform="translate(-28.800000, 0.000000)" id="Color">
                             <rect x="0" y="0" width="238.383871" height="220.354839"></rect>
                         </g>
