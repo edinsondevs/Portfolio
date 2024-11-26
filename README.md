@@ -1,63 +1,40 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
 </h2>
 
-
-<br/>
-
-<center>
-
-
-</center>
-
+---
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+Puedes clonar este repositorio para modificarlo y hacer cambios a tu manera. Por favor, dame el crédito adecuado enlazando de vuelta a [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). ¡Gracias!
 
-## Built With
+## 🌐 Enlace al Portfolio
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+Mi portfolio personal se encuentra en [soumyajit.tech](https://soumyajit.vercel.app/), donde podrás ver algunos de mis proyectos de GitHub, así como mi currículum y habilidades técnicas.
 
-This project was built using these technologies.
+## 🛠 Tecnologías Utilizadas
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+Este proyecto fue construido utilizando las siguientes tecnologías:
 
-## Features
+- **React.js**
+- **Node.js**
+- **Express.js**
+- **CSS3**
+- **Visual Studio Code**
+- **Vercel**
 
-**📖 Multi-Page Layout**
+## 🚀 Características
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+- **📖 Diseño Multi-Página**
+- **🎨 Estilizado con React-Bootstrap y CSS, con colores fáciles de personalizar**
+- **📱 Totalmente Responsivo**
 
-**📱 Fully Responsive**
+## 🏁 Cómo Empezar
 
-## Getting Started
+Clona este repositorio. Necesitarás tener `node.js` y `git` instalados globalmente en tu máquina.
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+### 🛠 Instalación y Configuración
 
-## 🛠 Installation and Setup Instructions
-
-1. Installation: `npm install`
-
-2. In the project directory, you can run: `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+1. **Instalación**: Ejecuta el siguiente comando en tu terminal:
+   ```bash
+   npm install
