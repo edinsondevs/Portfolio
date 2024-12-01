@@ -1,44 +1,66 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
-
+import { FaRegHandPointRight } from "react-icons/fa";
 function AboutCard() {
-  return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
+	return (
+		<Card className='quote-card-view'>
+			<Card.Body>
+				<blockquote className='blockquote mb-0'>
+					<p style={{ textAlign: "justify" }}>
+						Hola a todos, soy{" "}
+						<span className='purple'>Edinson Madrid </span> un
+						<span className='purple'> Venezolano</span> trabajador,
+						profesional, autodidacta y responsable viviendo en{" "}
+						<span className='purple'>Argentina </span> desde hace{" "}
+						<span className='purple'>
+							{new Date().getFullYear() - 2016} años
+						</span>
+						.
+						<br />
+						<br />
+						Actualmente trabajo como{" "}
+						<span className='purple'>
+							Software Engineer{" "}
+						</span>en{" "}
+						<span className='purple'>NTT Data Argentina</span>
+						.
+						<br />
+						<br />
+						Soy Ingeniero de Sistemas, ademas me formé como
+						FullStack Developer, pero estoy mas enfocado en la parte
+						Frontend.
+						<br />
+						<br />
+						¡Además de codificar, hay otras actividades que me
+						encanta hacer!
+					</p>
+					<ul>
+						<li className='about-activity'>
+							<FaRegHandPointRight className='purple' /> Jugar
+							Video Juegos.
+						</li>
+						<li className='about-activity'>
+							<FaRegHandPointRight className='purple' /> Andar en
+							bici.
+						</li>
+						<li className='about-activity'>
+							<FaRegHandPointRight className='purple' />{" "}
+							Investigar nuevas tecnologias.
+						</li>
+					</ul>
+					<br />
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
-        </blockquote>
-      </Card.Body>
-    </Card>
-  );
+					<p style={{ color: "rgb(155 126 172)" }}>
+						"El verdadero éxito consiste en hacer lo que amas y
+						hacerlo bien!"{" "}
+					</p>
+					<footer className='blockquote-footer'>
+						Autor desconocido.
+					</footer>
+				</blockquote>
+			</Card.Body>
+		</Card>
+	);
 }
 
 export default AboutCard;

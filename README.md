@@ -21,7 +21,7 @@ Este proyecto fue construido utilizando las siguientes tecnologías:
 - **Express.js**
 - **CSS3**
 - **Visual Studio Code**
-- **Vercel**
+
 
 ## 🚀 Características
 

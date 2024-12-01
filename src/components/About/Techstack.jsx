@@ -1,68 +1,63 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
   DiGit,
-  DiJava,
 } from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { SiFirebase, SiPostgresql } from "react-icons/si";
+import { TbBrandTypescript } from "react-icons/tb";
+
+const titleOptions = [
+  "Typescript",
+  "Javascript",
+  "React",
+  "Node",
+  "MongoDB",
+  "Git",
+  "Firebase",
+  "Postgresql",
+];
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <TbBrandTypescript  />
+        <p className="tech-icons-title" >{titleOptions[0]}</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
+        <p className="tech-icons-title" >{titleOptions[1]}</p>
+      </Col>      
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
+        <p className="tech-icons-title" >{titleOptions[2]}</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
+        <p className="tech-icons-title" >{titleOptions[3]}</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
+        <p className="tech-icons-title" >{titleOptions[4]}</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
+        <p className="tech-icons-title" >{titleOptions[5]}</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
+        <p className="tech-icons-title" >{titleOptions[6]}</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <p className="tech-icons-title" >{titleOptions[7]}</p>
       </Col>
     </Row>
   );
