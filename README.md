@@ -4,13 +4,9 @@
 
 ---
 
-## TL;DR
-
-Puedes clonar este repositorio para modificarlo y hacer cambios a tu manera. Por favor, dame el crédito adecuado enlazando de vuelta a [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). ¡Gracias!
-
 ## 🌐 Enlace al Portfolio
 
-Mi portfolio personal se encuentra en [soumyajit.tech](https://soumyajit.vercel.app/), donde podrás ver algunos de mis proyectos de GitHub, así como mi currículum y habilidades técnicas.
+Mi portfolio personal se encuentra en [edidev](https://portfolio-emadrid.netlify.app/), donde podrás ver algunos de mis proyectos de GitHub, así como mi currículum y habilidades técnicas.
 
 ## 🛠 Tecnologías Utilizadas
 
