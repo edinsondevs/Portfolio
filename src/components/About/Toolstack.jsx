@@ -1,13 +1,16 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack
+	SiVisualstudiocode,
+	SiPostman,
+	SiSlack,
+	SiSonarqube,
+  SiJenkins, SiAzuredevops
 } from "react-icons/si";
 import { VscGithubInverted } from "react-icons/vsc";
+import { FaBitbucket } from "react-icons/fa";
 
-const titleOptions = ["VsCode", "Postman", "Slack", "Github"];
+const titleOptions = ["VsCode", "Postman", "Slack", "Github", "BitBucket", "SonarQube", "Jenkins", "AzureDevops" ];
 
 function Toolstack() {
 
@@ -28,6 +31,22 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons"  >
         <VscGithubInverted />
         <p className="tech-icons-title" >{titleOptions[3]}</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons"  >
+        <FaBitbucket />
+        <p className="tech-icons-title" >{titleOptions[4]}</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons"  >
+        <SiSonarqube />
+        <p className="tech-icons-title" >{titleOptions[5]}</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons"  >
+        <SiJenkins />
+        <p className="tech-icons-title" >{titleOptions[6]}</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons"  >
+        <SiAzuredevops />
+        <p className="tech-icons-title" >{titleOptions[7]}</p>
       </Col>
     </Row>
   );
