@@ -26,8 +26,8 @@ function AboutCard() {
 						.
 						<br />
 						<br />
-						Soy Ingeniero de Sistemas, ademas me formé como
-						FullStack Developer, pero estoy mas enfocado en la parte
+						Soy Ingeniero de Sistemas, además me formé como
+						FullStack Developer, pero estoy más enfocado en la parte
 						Frontend.
 						<br />
 						<br />
@@ -45,7 +45,7 @@ function AboutCard() {
 						</li>
 						<li className='about-activity'>
 							<FaRegHandPointRight className='purple' />{" "}
-							Investigar nuevas tecnologias.
+							Investigar nuevas tecnologías.
 						</li>
 					</ul>
 					<br />

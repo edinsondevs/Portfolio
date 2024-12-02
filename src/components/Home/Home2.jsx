@@ -14,18 +14,17 @@ function Home2() {
 						md={12}
 						className='home-about-description'>
 						<h1 style={{ fontSize: "2.6em" }}>
-							DEJAME CONTARTE UN POCO{" "}
-							<span className='purple'> DE MI </span>
+							<span className='purple'> Sabías que? ... </span> 
 						</h1>
 						<p className='home-about-body'>
 							Soy Ingeniero de Sistemas y Desarrollador Web. En
 							los ultimos años especializandome en el frontend,
 							construyendo aplicaciones de gran envergadura y
 							relevancia, usando principalmente React y varias de
-							sus librerias nativas.
+							sus librerías nativas.
 							<br />
 							<br />
-							Mis principales lenguajes de programacion son:
+							Mis principales lenguajes de programación son:
 							<i>
 								<b className='purple'>
 									{" "}
