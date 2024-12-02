@@ -6,7 +6,14 @@ import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
-  return (
+	// Puedes usar el estado o props para determinar el tamaño actual si es necesario
+	const isSmallScreen = window.innerWidth < 576; // xs
+	const isMediumScreen = window.innerWidth >= 576 && window.innerWidth < 1300; // sm
+
+	// Determina si se debe aplicar la clase
+	const className = isSmallScreen || isMediumScreen ? "" : "home-header";
+
+	return (
 		<section>
 			<Container
 				fluid
@@ -16,8 +23,11 @@ function Home() {
 				<Container className='home-content'>
 					<Row>
 						<Col
-							md={7}
-							className='home-header'>
+							md={8}
+							sm={8}
+							xs={12}
+							className={className}
+						>
 							<h1
 								style={{ paddingBottom: 15 }}
 								className='heading'>
@@ -38,13 +48,15 @@ function Home() {
 								</strong>
 							</h1>
 
-							<div style={{ paddingTop: 50, paddingLeft: -50, textAlign: "left" }}>
+							<div style={{ padding: 50, textAlign: "left" }}>
 								<Type />
 							</div>
 						</Col>
 
 						<Col
-							md={5}
+							md={4}
+							sm={8}
+							xs={12}
 							style={{ paddingBottom: 20 }}>
 							<img
 								src={website}
@@ -58,7 +70,7 @@ function Home() {
 			</Container>
 			<Home2 />
 		</section>
-  );
+	);
 }
 
 export default Home;

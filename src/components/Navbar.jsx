@@ -6,35 +6,22 @@ import logo from "../Assets/EM_2.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineUser,
-} from "react-icons/ai";
+import { AiFillStar, AiOutlineHome, AiOutlineUser, AiOutlineMenu } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
-
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
 
   return (
 		<Navbar
 			expanded={expand}
-			fixed='top'
+			collapseOnSelect
 			expand='md'
-			className={navColour ? "sticky" : "navbar"}>
-			<Container>
+			fixed='top'
+			className='navbar navbar-expand-md'>
+			<Container className='d-flex justify-content-between '>
+
 				<Navbar.Brand
 					href='/'
 					className='d-flex'>
@@ -44,14 +31,13 @@ function NavBar() {
 						alt='brand'
 					/>
 				</Navbar.Brand>
+
 				<Navbar.Toggle
 					aria-controls='responsive-navbar-nav'
 					onClick={() => {
 						updateExpanded(expand ? false : "expanded");
 					}}>
-					<span></span>
-					<span></span>
-					<span></span>
+					<AiOutlineMenu color='white' />
 				</Navbar.Toggle>
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav
@@ -63,7 +49,7 @@ function NavBar() {
 								to='/'
 								onClick={() => updateExpanded(false)}>
 								<AiOutlineHome
-									style={{ marginBottom: "2px" }}
+									style={{ marginBottom: "0px" }}
 								/>{" "}
 								Inicio
 							</Nav.Link>
