@@ -38,7 +38,7 @@ function Home() {
 								</strong>
 							</h1>
 
-							<div style={{ padding: 50, textAlign: "left" }}>
+							<div style={{ paddingTop: 50, paddingLeft: -50, textAlign: "left" }}>
 								<Type />
 							</div>
 						</Col>

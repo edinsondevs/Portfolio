@@ -13,7 +13,7 @@ function Home2() {
 			<Container>
 				<Row>
 					<Col
-						md={8}
+						md={12}
 						className='home-about-description'>
 						<h1 style={{ fontSize: "2.6em" }}>
 							DEJAME CONTARTE UN POCO{" "}

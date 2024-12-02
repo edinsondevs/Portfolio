@@ -254,32 +254,33 @@ button:focus {
 
 .home-header {
   padding-top: 80px !important;
+  margin-left: -6em !important;
 }
 
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
+  background-image: var(--image-gradient), url(./Assets/sssplatter.svg) !important ;
+  background-position: top left !important;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-top: 30px !important;  
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 9rem 0px 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
 
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  padding-left: 0px !important;
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  padding-left: 0px !important;
 }
 
 .main-name {
