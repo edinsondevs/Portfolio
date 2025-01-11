@@ -66,7 +66,7 @@ function Home2() {
 						</Tilt>
 					</Col> */}
 					<Col>
-						<div style={{ padding: 50, textAlign: "left" }}>
+						<div style={{ padding: 50, minHeight: 400, textAlign: "left" }}>
 							<Description />
 						</div>
 					</Col>
