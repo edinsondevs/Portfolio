@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import website from "../../Assets/website.svg";
+// import website from "../../Assets/website.svg";
+import website from "../../Assets/perfil.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -23,11 +24,10 @@ function Home() {
 				<Container className='home-content'>
 					<Row>
 						<Col
-							md={8}
+							md={9}
 							sm={8}
 							xs={12}
-							className={className}
-						>
+							className={className}>
 							<h1
 								style={{ paddingBottom: 15 }}
 								className='heading'>
@@ -54,15 +54,20 @@ function Home() {
 						</Col>
 
 						<Col
-							md={4}
+							md={3}
 							sm={8}
 							xs={12}
-							style={{ paddingBottom: 20 }}>
+							style={{ paddingBottom: 10 }}>
 							<img
 								src={website}
 								alt='home pic'
-								className='img-fluid invest-image'
-								style={{ maxHeight: "450px" }}
+								className='invest-image shadow-lg'
+								style={{
+									maxHeight: "450px",
+									filter: "drop-shadow(0 0 1)",
+									boxShadow: "0 0 50px rgba(0, 0, 0, 0.9)", 
+									maskImage: 'linear-gradient(white 80%, transparent)',
+								}}
 							/>
 						</Col>
 					</Row>

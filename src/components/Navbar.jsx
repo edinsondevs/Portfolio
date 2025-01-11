@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { AiFillStar, AiOutlineHome, AiOutlineUser, AiOutlineMenu } from "react-icons/ai";
-
+import avatar from "../Assets/picture-profile.png";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -19,18 +19,25 @@ function NavBar() {
 			collapseOnSelect
 			expand='md'
 			fixed='top'
-			className='navbar navbar-expand-md'>
-			<Container className='d-flex justify-content-between '>
-
-				<Navbar.Brand
-					href='/'
-					className='d-flex'>
-					<img
-						src={logo}
-						className='img-fluid logo'
-						alt='brand'
-					/>
-				</Navbar.Brand>
+			className='navbar navbar-expand-md '>
+			<Container className='d-flex justify-content-center'>
+				<div className='d-flex  '>
+					<Navbar.Brand
+						href='/'
+						className='d-flex align-items-center gap-3'>
+						<img
+							src={avatar}
+							alt='avatar'
+							style={{
+								maxHeight: "50px",
+								borderRadius: "50%",
+								transform: "scaleY(1)",
+							}}
+						/>
+						<p className='fs-5'>Fronted Developer</p>
+					</Navbar.Brand>
+					<br />
+				</div>
 
 				<Navbar.Toggle
 					aria-controls='responsive-navbar-nav'

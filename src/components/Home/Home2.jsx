@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ContactMe from "./contactMe";
+import Description from "./Description";
 
 function Home2() {
 	return (
@@ -14,9 +15,9 @@ function Home2() {
 						md={12}
 						className='home-about-description'>
 						<h1 style={{ fontSize: "2.6em" }}>
-							<span className='purple'> Sabías que? ... </span> 
+							<span className='purple'> Sabías que? ... </span>
 						</h1>
-						<p className='home-about-body'>
+						{/* <p className='home-about-body'>
 							Soy Ingeniero de Sistemas y Desarrollador Web. En
 							los ultimos años especializandome en el frontend,
 							construyendo aplicaciones de gran envergadura y
@@ -51,7 +52,7 @@ function Home2() {
 								Node.js, MongoDB, Firebase, Next.js{" "}
 							</b>
 							.
-						</p>
+						</p> */}
 					</Col>
 					{/* <Col
 						md={4}
@@ -64,6 +65,11 @@ function Home2() {
 							/>
 						</Tilt>
 					</Col> */}
+					<Col>
+						<div style={{ padding: 50, textAlign: "left" }}>
+							<Description />
+						</div>
+					</Col>
 				</Row>
 				<Row>
 					<ContactMe />
