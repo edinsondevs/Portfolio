@@ -87,7 +87,7 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0rem 2rem !important;
   font-size: 1.2rem !important;
   background-color: rgba(12, 8, 24, 0.904);
 }
@@ -321,12 +321,12 @@ button:focus {
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-top: 10px !important;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 40px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -439,9 +439,6 @@ button:focus {
   padding: 0 !important;
 }
 
-.blockquote-footer {
-  /* color: #a588c0 !important; */
-}
 /* --------- */
 /* Projects */
 /* --------- */

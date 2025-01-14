@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/EM_2.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -20,7 +19,7 @@ function NavBar() {
 			expand='md'
 			fixed='top'
 			className='navbar navbar-expand-md '>
-			<Container className='d-flex justify-content-center'>
+			<Container className='d-flex justify-content-between'>
 				<div className='d-flex  '>
 					<Navbar.Brand
 						href='/'
@@ -41,11 +40,13 @@ function NavBar() {
 
 				<Navbar.Toggle
 					aria-controls='responsive-navbar-nav'
+					style={{ marginLeft: "auto" }}
 					onClick={() => {
 						updateExpanded(expand ? false : "expanded");
 					}}>
 					<AiOutlineMenu color='white' />
 				</Navbar.Toggle>
+
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav
 						className='ms-auto'
