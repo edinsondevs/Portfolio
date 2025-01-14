@@ -6,7 +6,7 @@ function Github() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px", gap: "2rem" }}>
       <h1 className="project-heading" style={{ paddingBottom: "10px" }}>
-        Días de <strong className="purple">codificación</strong> personal
+        Días de <strong className="blue">codificación</strong> personal
       </h1>
       <footer className='blockquote-footer'>
         <cite title='Source Title'>En el 2024 he dedicado mas tiempo a codificación para empresas, por lo que no se refleja en mi github personal </cite>.

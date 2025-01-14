@@ -1,19 +1,34 @@
-'use client';
-import React, { useEffect, useRef, useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ContactMe from "./contactMe";
 import Description from "./Description";
 
 function Home2() {
+	const [descriptionHeight, setDescriptionHeight] = useState(350); // Altura por defecto
 
-	    const descriptionRef = useRef(null);
-		const [marginTop, setMarginTop] = useState(0);
-	    useEffect(() => {
-			if (descriptionRef.current) {
-				const descriptionHeight = descriptionRef.current.offsetHeight;
-				setMarginTop(descriptionHeight + 10); // Ajusta el valor según sea necesario
+	useEffect(() => {
+		// Función para actualizar la altura del componente Description
+		const updateHeight = () => {
+			if (window.innerWidth < 768) {
+				// Pantallas móviles
+				setDescriptionHeight(750); // Altura para móviles
+			} else {
+				setDescriptionHeight(450); // Altura para pantallas más grandes
 			}
-		}, [descriptionRef]);
+		};
+
+		// Llama a la función al cargar el componente
+		updateHeight();
+
+		// Agrega un listener para el resize
+		window.addEventListener("resize", updateHeight);
+
+		// Limpia el listener al desmontar el componente
+		return () => {
+			window.removeEventListener("resize", updateHeight);
+		};
+	}, []);
 
 	return (
 		<Container
@@ -31,16 +46,15 @@ function Home2() {
 					</Col>
 					<Col className='d-flex'>
 						<div
-							ref={descriptionRef}
 							style={{
-								minHeight: 350,
+								minHeight: descriptionHeight,
 								textAlign: "left",
 							}}>
 							<Description />
 						</div>
 					</Col>
 				</Row>
-				<Row style={{ marginTop: marginTop }}>
+				<Row>
 					<ContactMe />
 				</Row>
 			</Container>

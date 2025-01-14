@@ -7,7 +7,7 @@ const ContactMe = () => {
       <div md={12} className="home-about-social">
           <h1>Para contactarme</h1>
           <p>
-              No dude en ponerse en <span className="purple">contacto </span>conmigo
+              No dude en ponerse en <span className="blue">contacto </span>conmigo
           </p>
           <ul className="home-about-social-links">
               <li className="social-icons">

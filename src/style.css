@@ -14,7 +14,7 @@ html {
   --imp-text-color: #1189ec;
 }
 
-.purple {
+.blue {
   color: var(--imp-text-color) !important;
 }
 
@@ -372,7 +372,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #acf438;
+  background: var(--imp-text-color);
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -380,13 +380,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #acf438;
+  box-shadow: 0 0 15px var(--imp-text-color);
 }
 
 .home-social-icons:hover {
-  color: #acf438;
-  box-shadow: 0 0 5px #acf438;
-  text-shadow: 0 0 2px #acf438;
+  color: var(--imp-text-color);
+  box-shadow: 0 0 5px var(--imp-text-color);
+  text-shadow: 0 0 2px var(--imp-text-color);
 }
 
 .social-icons {
