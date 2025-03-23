@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { AiFillStar, AiOutlineHome, AiOutlineUser, AiOutlineMenu } from "react-icons/ai";
-import avatar from "../Assets/picture-profile.png";
+import avatar from "../Assets/picture-profile.avif";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
