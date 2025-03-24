@@ -22,9 +22,8 @@ function ProjectCards(props) {
 						<p>{props.description}</p>
 					</Card.Text>
 
-					<footer className='pt-4'>
+					<footer className='pt-4 '>
 						{!props.isBlog && props.demoLink && (
-							<footer className='footer'>
 								<Button
 									variant='primary'
 									href={props.demoLink}
@@ -33,7 +32,6 @@ function ProjectCards(props) {
 									<CgWebsite /> &nbsp;
 									{"Enlace a la página"}
 								</Button>
-							</footer>
 						)}
 					</footer>
 				</blockquote>
