@@ -9,7 +9,6 @@ function AboutCard() {
 					<p style={{ textAlign: "justify" }}>
 						Hola a todos, soy{" "}
 						<span className='purple'>Edinson Madrid </span> un
-						<span className='purple'> Venezolano</span> trabajador,
 						profesional, autodidacta y responsable viviendo en{" "}
 						<span className='purple'>Argentina </span> desde hace{" "}
 						<span className='purple'>
