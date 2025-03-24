@@ -50,7 +50,7 @@ function AboutCard() {
 					</ul>
 					<br />
 
-					<p style={{ color: "rgb(155 126 172)" }}>
+					<p className='main-name'>
 						"El verdadero éxito consiste en hacer lo que amas y
 						hacerlo bien!"{" "}
 					</p>
