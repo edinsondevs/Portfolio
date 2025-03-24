@@ -1,3 +1,4 @@
+import { Stack } from "react-bootstrap";
 import GitHubCalendar from "react-github-calendar";
 import { useMediaQuery } from "react-responsive";
 
@@ -22,14 +23,19 @@ export const CalendarGitHub = ({ year }) => {
 				borderRadius: "10px",
 				padding: "30px",
 			}}>
-			<GitHubCalendar
-				username='edinsondevs'
-				year={year}
-				blockSize={15}
-				blockMargin={5}
-				color='#1189ec'
-				fontSize={getFontSize()}
-			/>
+			<Stack gap={3}>
+				<div style={{ fontSize: getFontSize() }}>
+					<p style={{textDecorationLine: 'underline'}} >Colaboraciones de {year}</p>
+				</div>
+				<GitHubCalendar
+					username='edinsondevs'
+					year={year}
+					blockSize={15}
+					blockMargin={5}
+					color='#1189ec'
+					fontSize={getFontSize()}
+				/>
+			</Stack>
 		</article>
 	);
 };
