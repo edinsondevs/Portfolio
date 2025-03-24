@@ -42,7 +42,7 @@ export const techStack = [
 export const projects = [
     {
         imgPath: appDog,
-        title: "Landig Page",
+        title: "SPA Adopción de Mascotas",
         description: "Landing Page Demo de un sitio web de adopcion de mascotas, construido con React.js, Material-UI, Vite, Redux para el manejo y gestion de los usuarios, consumo de API para mostrar datos de las mascotas. Cuenta con información de los servicios prestados, un formulario de registro de mascota y otro para la adopción, filtros entre otras opciones.",
         demoLink: "https://my-app-adoptions-pets.web.app/",
         isBlog: false

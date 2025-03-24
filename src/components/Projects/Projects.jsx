@@ -19,19 +19,20 @@ function Projects() {
 					A continuación mostraré algunos proyectos en los que he
 					trabajado.
 				</p>
-				<Row
-					style={{ justifyContent: "center", paddingBottom: "10px" }}>
+				<Row >
 					{projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              imgPath={project.imgPath}
-              isBlog={project.isBlog}
-              title={project.title}
-              description={project.description}
-              // ghLink={project.ghLink}
-              demoLink={project.demoLink}
-            />
-          ))}
+						<Container fluid style={{ width: "auto" }}>
+						<ProjectCard
+							key={index}
+							imgPath={project.imgPath}
+							isBlog={project.isBlog}
+							title={project.title}
+							description={project.description}
+							// ghLink={project.ghLink}
+							demoLink={project.demoLink}
+							/>
+						</Container>
+					))}
 				</Row>
 			</Container>
 		</Container>
