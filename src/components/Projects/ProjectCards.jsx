@@ -7,7 +7,9 @@ import Ratio from "react-bootstrap/Ratio";
 function ProjectCards(props) {
 	return (
 		<Card className='project-card-view '>
-			<Ratio aspectRatio='16x9' className="ratio my-4">
+			<Ratio
+				aspectRatio='16x9'
+				className='ratio my-4'>
 				<Card.Img
 					variant='top'
 					src={props.imgPath}
@@ -16,22 +18,28 @@ function ProjectCards(props) {
 				/>
 			</Ratio>
 
-			<Card.Body style={{ maxWidth: "30rem",  }}>
-				<blockquote className='blockquote mb-0'>
-					<Card.Text style={{ height: "200px", marginBottom: "30px", }}>
+			<Card.Body >
+				<blockquote className=' mb-0'>
+					<Card.Text
+						className='description-scroll mb-3'
+						style={{
+							height: "250px",							
+							overflowY: "auto",
+							flexGrow: 1,
+						}}>
 						<p>{props.description}</p>
 					</Card.Text>
 
-					<footer className='pt-4 '>
+					<footer className='pt-4' style={{width: '100%'}}>
 						{!props.isBlog && props.demoLink && (
-								<Button
-									variant='primary'
-									href={props.demoLink}
-									target='_blank'
-									style={{ marginLeft: "10px" }}>
-									<CgWebsite /> &nbsp;
-									{"Enlace a la página"}
-								</Button>
+							<Button
+								variant='primary'
+								href={props.demoLink}
+								target='_blank'
+								style={{ marginLeft: "10px" }}>
+								<CgWebsite /> &nbsp;
+								{"Enlace a la página"}
+							</Button>
 						)}
 					</footer>
 				</blockquote>

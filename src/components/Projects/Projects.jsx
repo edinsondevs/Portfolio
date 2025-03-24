@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { projects } from "../../constants/dataStacks";
@@ -19,19 +19,20 @@ function Projects() {
 					A continuación mostraré algunos proyectos en los que he
 					trabajado.
 				</p>
-				<Row >
+				<Row xs={1} md={2} className="g-4" >
 					{projects.map((project, index) => (
-						<Container fluid style={{ width: "auto" }}>
+					<Col key={index}>
+						<Container fluid style={{ width: 'auto' , height:'100%' }} >
 						<ProjectCard
 							key={index}
 							imgPath={project.imgPath}
 							isBlog={project.isBlog}
 							title={project.title}
 							description={project.description}
-							// ghLink={project.ghLink}
 							demoLink={project.demoLink}
 							/>
 						</Container>
+					</Col>
 					))}
 				</Row>
 			</Container>

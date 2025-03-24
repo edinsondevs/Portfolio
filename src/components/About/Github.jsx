@@ -4,7 +4,7 @@ import { Row } from "react-bootstrap";
 import { CalendarGitHub } from "../shared/CalendarGitHub";
 
 function Github() {
-  return (
+	return (
 		<Row
 			style={{
 				justifyContent: "center",
@@ -23,11 +23,12 @@ function Github() {
 				</cite>
 				.
 			</footer>
+			
 			<CalendarGitHub year={2025} />
-      <CalendarGitHub year={2024} />
-      <CalendarGitHub year={2023} />      
+			<CalendarGitHub year={2024} />
+			<CalendarGitHub year={2023} />
 		</Row>
-  );
+	);
 }
 
 export default Github;
