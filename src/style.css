@@ -283,7 +283,7 @@ button:focus {
 }
 
 .home-section {
-	position: relative;
+	/* position: relative; */
 	z-index: -1;
 	background-image: var(--image-gradient), url(./Assets/sssplatter.svg) !important ;
 	background-position: top left !important;

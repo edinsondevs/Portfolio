@@ -5,6 +5,9 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 
+import { Imagen } from "../Imagen/Astropos";
+import Atropos from "atropos/react";
+
 function Home() {
 	// Puedes usar el estado o props para determinar el tamaño actual si es necesario
 	const isSmallScreen = window.innerWidth < 576; // xs
@@ -20,6 +23,7 @@ function Home() {
 				className='home-section'
 				id='home'>
 				<Particle />
+				{/* <Imagen /> */}
 				<Container className='home-content'>
 					<Row>
 						<Col
@@ -57,17 +61,25 @@ function Home() {
 							sm={8}
 							xs={12}
 							style={{ paddingBottom: 10 }}>
-							<img
-								src={website}
-								alt='home pic'
-								className='invest-image shadow-lg'
-								style={{
-									maxHeight: "450px",
-									filter: "drop-shadow(0 0 1)",
-									boxShadow: "0 0 50px rgba(0, 0, 0, 0.9)", 
-									maskImage: 'linear-gradient(white 80%, transparent)',
-								}}
-							/>
+							<Atropos
+								className='atropos-banner atropos-inner'
+								onRotate={(x, y) => console.log("Rotate", x, y)}
+								activeOffset={40}
+								shadowScale={1.05}>
+								<img
+									src={website}
+									alt='home pic'
+									className='invest-image shadow-lg'
+									style={{
+										maxHeight: "450px",
+										filter: "drop-shadow(0 0 1)",
+										boxShadow:
+											"0 0 50px rgba(0, 0, 0, 0.9)",
+										maskImage:
+											"linear-gradient(white 80%, transparent)",
+									}}
+								/>
+							</Atropos>
 						</Col>
 					</Row>
 				</Container>
