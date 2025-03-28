@@ -28,8 +28,8 @@ function Footer() {
 						<li className='social-icons'>
 							<a
 								href='https://github.com/edinsondevs'
-								style={{ color: "white", fontSize: "2rem" }}
 								target='_blank'
+								className='home-social-icons'
 								rel='noopener noreferrer'>
 								<AiFillGithub />
 							</a>
@@ -38,8 +38,8 @@ function Footer() {
 						<li className='social-icons'>
 							<a
 								href='https://www.linkedin.com/in/ingedinsonmadrid/'
-								style={{ color: "white", fontSize: "2rem" }}
 								target='_blank'
+								className='home-social-icons'
 								rel='noopener noreferrer'>
 								<FaLinkedinIn />
 							</a>
