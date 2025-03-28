@@ -86,13 +86,29 @@
 }
 
 .home-image {
-   padding: 100px;
+  padding: 5% 2%; /* Usa porcentajes para el padding */
   max-width: 800px;
   margin: 0 auto;
-
   text-align: center;
   position: relative;
+  box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
 }
+
+@media (max-width: 768px) {
+  .home-image {
+    padding: 10px; /* Ajusta el padding para pantallas más pequeñas */
+    max-width: 90%; /* Permite que el contenedor ocupe más espacio en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-image {
+    padding: 0px; /* Ajusta aún más el padding para pantallas muy pequeñas */
+    max-width: 100%; /* Permite que el contenedor ocupe casi todo el ancho */
+  }
+}
+
+
 .main-img{
   transform: scaleX(-1) !important;
 }

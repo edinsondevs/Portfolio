@@ -451,6 +451,13 @@ button:focus {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.footer-icons {
+		display: none;
+	}
+	
+}
+
 .footer h3 {
 	font-size: 1em;
 	color: white !important;
