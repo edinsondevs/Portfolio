@@ -66,7 +66,14 @@ function Home() {
 								textAlign: "center",
 							}}>
 							<div className='home-image'>
-								<Atropos className='atropos' >
+								<Atropos className='atropos'>
+									<img
+										className='background-img'
+										src='https://images.unsplash.com/photo-1628818144466-856f7d477125?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+										alt=''
+										srcset=''
+										data-atropos-offset='-5'
+									/>
 									<img
 										className='main-img'
 										src={website}
