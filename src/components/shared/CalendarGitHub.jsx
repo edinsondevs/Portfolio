@@ -6,7 +6,6 @@ export const CalendarGitHub = ({ year }) => {
 	// Hooks para detectar tamaño de pantalla
 	const isMobile = useMediaQuery({ maxWidth: 767 });
 	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-	const isDesktop = useMediaQuery({ minWidth: 992 });
 
 	// Determinar el fontSize basado en el tamaño de pantalla
 	const getFontSize = () => {
